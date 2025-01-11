@@ -1,0 +1,5 @@
+.input {
+    display: flex;
+    justify-content: center;
+    margin-top: calc(0px - 1.5rem - 6px);
+}
