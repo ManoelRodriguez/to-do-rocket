@@ -5,7 +5,7 @@ export function Input() {
     return (
         <div className={styles.inputCreate}>
             <input type="text" className={styles.input} placeholder='Adicione uma tarefa' />
-            <a className={styles.createTask}>
+            <a className={styles.createTask} href='#'>
                 Criar
                 <PlusCircle size={19.5} />
             </a>

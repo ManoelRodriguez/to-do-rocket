@@ -11,6 +11,7 @@
     border: 1px solid var(--gray-700);
     padding: 1rem;
     font-size: 16px;
+    color: var(--gray-100);
 }
 
 .createTask {
@@ -28,4 +29,13 @@
     justify-content: center;
     align-items: center;
     gap: 8px;
+}
+
+.inputCreate a {
+    text-decoration: none;
+}
+
+.inputCreate a:hover {
+    background: var(--blue);
+    transition: 0.2s;
 }
