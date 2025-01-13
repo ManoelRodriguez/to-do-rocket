@@ -1,4 +1,4 @@
-.tasks {
+.noTasks {
     width: 46rem;
     height: 17.9375rem;
 
@@ -6,20 +6,20 @@
     flex-direction: column;
 }
 
-.tasks p {
+.noTasks p {
     font-weight: bold;
     color: var(--blue);
     font-size: 14px;
 
 }
 
-.tasks .concluidas {
+.noTasks .concluidas {
     font-weight: bold;
     color: var(--purple);
     font-size: 14px;
 }
 
-.tasks .cont {
+.noTasks .cont {
     margin-left: 5px;
     border: 1px solid var(--gray-400);
     border-radius: 100%;
@@ -38,29 +38,7 @@
 
 }
 
-.taskList {
-    border-top: 1px solid var(--gray-400);
-    border-radius: 8px;
-    padding-top: 4.375rem;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.taskList img {
-    height: 3.5rem;
-    width: 3.5rem;
-}
-
-.taskList p {
-    font-size: 16px;
-    color: var(--gray-300);
-}
-
-.taskList span {
-    font-size: 16px;
-    font-weight: bold;
-    color: var(--gray-300);
+.task {
+    width: 46rem;
+    height: 4.5rem;
 }
