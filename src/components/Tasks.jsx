@@ -3,7 +3,6 @@ import clipboard from '../assets/clipboard.png'
 import { Trash } from 'phosphor-react'
 
 export function Tasks(props) {
-    const [tasks, setTasks] = useState()
 
     return (
         <div className={styles.tasks}>
