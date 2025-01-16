@@ -32,6 +32,13 @@ function App() {
   const hasTasks = tasks.length > 0
 
   const handleCreateTask = (title) => {
+    event.preventDefault()
+
+    if (!title) {
+      alert('Por favor, insira um título para a tarefa')
+      return
+    }
+
     const newTask = {
       id: uuidv4(),
       title: title,

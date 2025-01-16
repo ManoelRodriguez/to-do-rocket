@@ -13,7 +13,12 @@ export function Input({ handleCreateTask }) {
                 value={title}
                 onChange={(event) => setTitle(event.target.value)} />
 
-            <a className={styles.createTask} href='#' onClick={() => handleCreateTask(title)}>
+            <a className={styles.createTask} href='#'
+                onClick={() => {
+                    handleCreateTask(title)
+                    setTitle('')
+                }}
+            >
                 Criar
                 <PlusCircle size={19.5} />
             </a>
