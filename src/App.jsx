@@ -31,11 +31,20 @@ function App() {
 
   const hasTasks = tasks.length > 0
 
+  const handleCreateTask = (title) => {
+    const newTask = {
+      id: uuidv4(),
+      title: title,
+      isComplete: false,
+    }
+    setTasks([...tasks, newTask])
+  }
+
   return (
     <div>
       <Header />
       <div className={styles.input}>
-        <Input />
+        <Input handleCreateTask={handleCreateTask} />
       </div>
       <main className={styles.tasks}>
 
