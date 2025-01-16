@@ -6,36 +6,6 @@
     flex-direction: column;
 }
 
-.noTasks .cont {
-    margin-left: 5px;
-    border: 1px solid var(--gray-400);
-    border-radius: 100%;
-    background: var(--gray-400);
-    width: 250px;
-    height: 190px;
-    font-size: 12px;
-    padding: 2px 8px;
-    color: var(--gray-200);
-}
-
-.noTasks p {
-    color: var(--blue);
-    font-size: 14px;
-
-}
-
-.noTasks p span {
-    font-weight: bold;
-
-}
-
-.noTasks .concluidas {
-    font-weight: bold;
-    color: var(--purple);
-    font-size: 14px;
-}
-
-
 .emptyList {
     border-top: 1px solid var(--gray-400);
     border-radius: 8px;

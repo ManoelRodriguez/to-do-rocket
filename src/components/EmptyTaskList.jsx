@@ -5,10 +5,6 @@ export function EmptyTaskList() {
     return (
 
         <div className={styles.noTasks}>
-            <header className={styles.header}>
-                <p><span>Tarefas criadas</span><span className={styles.cont}>0</span></p>
-                <p className={styles.concluidas}>Concluídas<span className={styles.cont}>0</span></p>
-            </header>
             <div className={styles.emptyList}>
                 <img src={clipboard} alt="Foto de uma lista de tarefas" />
                 <p>

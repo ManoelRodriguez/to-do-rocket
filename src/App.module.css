@@ -8,4 +8,47 @@
     display: flex;
     justify-content: center;
     margin-top: 4rem;
+
+}
+
+.teste {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    width: 46rem;
+    height: 1.1875rem;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.header .cont {
+    margin-left: 5px;
+    border: 1px solid var(--gray-400);
+    border-radius: 100%;
+    background: var(--gray-400);
+    width: 250px;
+    height: 190px;
+    font-size: 12px;
+    padding: 2px 8px;
+    color: var(--gray-200);
+}
+
+.header p {
+    color: var(--blue);
+    font-size: 14px;
+
+}
+
+.header p span {
+    font-weight: bold;
+
+}
+
+.header .concluidas {
+    font-weight: bold;
+    color: var(--purple);
+    font-size: 14px;
 }

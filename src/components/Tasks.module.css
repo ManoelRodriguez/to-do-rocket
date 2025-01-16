@@ -1,44 +1,68 @@
-.noTasks {
+.tasks {
     width: 46rem;
-    height: 17.9375rem;
 
     display: flex;
     flex-direction: column;
 }
 
-.noTasks p {
-    font-weight: bold;
-    color: var(--blue);
-    font-size: 14px;
-
-}
-
-.noTasks .concluidas {
-    font-weight: bold;
-    color: var(--purple);
-    font-size: 14px;
-}
-
-.noTasks .cont {
-    margin-left: 5px;
-    border: 1px solid var(--gray-400);
-    border-radius: 100%;
-    background: var(--gray-400);
-    width: 250px;
-    height: 190px;
-    font-size: 12px;
-    padding: 2px 8px;
-    color: var(--gray-200);
-}
-
-.header {
+.task {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1.5rem;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    background: var(--gray-500);
+    margin-bottom: 1rem;
+}
+
+.task p {
+    font-size: 16px;
+    color: var(--gray-200);
+
+    display: flex;
+    justify-content: start;
+}
+
+.task a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+
+    color: var(--gray-300);
+    text-decoration: none;
+}
+
+.task a:hover {
+    background-color: var(--gray-400);
+    color: var(--danger);
+}
+
+.checkboxContainer {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkbox {
+    display: none;
+    /* Oculta o checkbox padrão */
 
 }
 
-.task {
-    width: 46rem;
-    height: 4.5rem;
+.checkmark {
+    width: 17px;
+    /* Tamanho do círculo */
+    height: 17px;
+    background-color: var(--gray-500);
+    /* Cor do fundo inicial */
+    border: 2px solid var(--blue);
+    /* Borda do círculo */
+    border-radius: 50%;
+    /* Torna o círculo redondo */
+    display: inline-block;
+    position: relative;
+    transition: background-color 0.3s, border-color 0.3s;
 }
