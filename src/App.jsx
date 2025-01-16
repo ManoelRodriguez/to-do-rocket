@@ -47,6 +47,11 @@ function App() {
     setTasks([...tasks, newTask])
   }
 
+  const handleDeleteTask = (id) => {
+    const newTasks = tasks.filter(task => task.id !== id)
+    setTasks(newTasks)
+  }
+
   return (
     <div>
       <Header />
@@ -66,8 +71,10 @@ function App() {
               return (
                 <Tasks
                   key={task.id}
+                  id={task.id}
                   title={task.title}
-                  isComplete={task.isComplete} />
+                  isComplete={task.isComplete}
+                  handleDeleteTask={handleDeleteTask} />
               )
             })
 
